@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://192.168.1.103/jianglie/config-server-git.git
+          search-paths: config-repo
+          username: jianglie
+          password: jianglie
+server:
+  port: 1201
+
