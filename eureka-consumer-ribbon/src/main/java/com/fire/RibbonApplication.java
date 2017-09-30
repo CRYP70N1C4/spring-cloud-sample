@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class EurekaConsumerRibbonApplication {
+public class RibbonApplication {
 
     @Bean
     @LoadBalanced
@@ -19,7 +19,7 @@ public class EurekaConsumerRibbonApplication {
     }
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder(EurekaConsumerRibbonApplication.class)
+        new SpringApplicationBuilder(RibbonApplication.class)
                 .web(WebApplicationType.SERVLET)
                 .run(args);
     }
